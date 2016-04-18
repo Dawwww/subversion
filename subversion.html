@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<title>Subversion</title>
+		<meta charset="utf8"/>
+		<script>
+			function resultado(){
+				var num1 = document.getElementById('num1');
+				var num2 = document.getElementById('num2');
+				var num3 = document.getElementById('num3');
+				var num4 = document.getElementById('num4');
+				var num5 = document.getElementById('num5');
+
+			var result = num1;
+			
+			if(result > num2){
+				result = num2;
+			}
+			
+			if(result > num3){
+				result = num3;
+			}
+
+			if(result > num4){
+				result = num4;
+			}
+	
+			if(result > num5){
+				result = num5;
+			}
+
+			//delete num1, num2, num3, num4, num5;
+
+
+
+			document.getElementById("resultado").innerHTML = result.value;			
+
+			}
+		</script>
+	</head>
+	<body>
+		<center><h1>Subversion</h1>
+		<hr/>
+		<br/>
+			Introdueix els 5 numeros:<br/>
+			Numero 1: <input type='number' id='num1'><br/>
+			Numero 2: <input type='number' id='num2'><br/>
+			Numero 3: <input type='number' id='num3'><br/>
+			Numero 4: <input type='number' id='num4'><br/>
+			Numero 5: <input type='number' id='num5'><br/>
+			<button onclick="resultado()">Resultado</button>
+			<br/><br/>
+		<div id="resultado"></div>
+			
+
+	</body>
+</html>
